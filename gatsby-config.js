@@ -1,8 +1,8 @@
-const config = require('./src/data/config');
+const config = require('./src/data/config')
 
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-});
+})
 
 module.exports = {
   siteMetadata: {
@@ -22,7 +22,8 @@ module.exports = {
         fieldName: 'github',
         url: 'https://api.github.com/graphql',
         headers: {
-          Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
+          //Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
+          Authorization: `bearer ${secrets.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
         },
         fetchOptions: {},
       },
@@ -73,4 +74,4 @@ module.exports = {
     },
     'gatsby-plugin-offline',
   ],
-};
+}
