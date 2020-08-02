@@ -1,6 +1,7 @@
 module.exports = {
   defaultTitle: 'Xiaodeaux',
-  logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
+  logo: '../../static/favicon/favicon-512.png',
+  // logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
   author: 'Xiaodeaux',
   url: 'https://portfolio.smakosh.com',
   legalName: 'John Doe',
