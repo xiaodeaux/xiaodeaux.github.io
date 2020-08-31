@@ -19,7 +19,7 @@ export const Projects = () => {
       {
         github {
           viewer {
-            repositories(first: 8, orderBy: { field: STARGAZERS, direction: DESC }) {
+            repositories(first: 8, orderBy: { field: STARGAZERS, direction: DESC }, isFork: false) {
               edges {
                 node {
                   id
@@ -49,7 +49,7 @@ export const Projects = () => {
                 <h4>{node.name}</h4>
                 <p>{node.description}</p>
               </Content>
-              <Stats theme={theme}>
+              {/* <Stats theme={theme}>
                 <div>
                   <Star color={theme === 'light' ? '#000' : '#fff'} />
                   <span>{node.stargazers.totalCount}</span>
@@ -58,7 +58,7 @@ export const Projects = () => {
                   <Fork color={theme === 'light' ? '#000' : '#fff'} />
                   <span>{node.forkCount}</span>
                 </div>
-              </Stats>
+              </Stats> */}
             </Card>
           </Item>
         ))}

@@ -15,6 +15,8 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-theme-ui',
     {
       resolve: 'gatsby-source-graphql',
       options: {

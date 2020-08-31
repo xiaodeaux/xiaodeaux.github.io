@@ -4,7 +4,7 @@ module.exports = {
   author: 'Xiaodeaux',
   url: 'https://xiaodeaux.github.io',
   legalName: 'Xiaodeaux',
-  defaultDescription: 'I’m Xiaodeaux and I’m a Web developer consultant!',
+  defaultDescription: 'I’m Xiaodeaux and I’m a web developer consultant!',
   socialLinks: {
     twitter: 'http://www.twitter.com/xiaodeaux',
     github: 'https://github.com/xiaodeaux',
